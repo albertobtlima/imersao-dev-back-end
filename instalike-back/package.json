@@ -2,7 +2,7 @@
   "name": "instalike-back",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "license": "ÄGPL-version-3.0",
   "private": "false",
   "engines": {
