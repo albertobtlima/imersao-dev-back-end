@@ -1,0 +1,24 @@
+{
+  "name": "instalike-back",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "license": "ÄGPL-version-3.0",
+  "private": "false",
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "dev": "",
+    "test": ""
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
