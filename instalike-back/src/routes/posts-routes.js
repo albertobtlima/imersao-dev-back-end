@@ -1,11 +1,9 @@
 import express from "express";
+import { listarPosts } from "../controllers/posts-controller.js";
 
-const routs = (app) => {
+const routes = (app) => {
   app.use(express.json());
-  app.get("/posts", async (req, res) => {
-    const posts = await getTodosPosts();
-    res.status(200).json(posts);
-  });
+  app.get("/posts", listarPosts);
 };
 
-export default routs;
+export default routes;
