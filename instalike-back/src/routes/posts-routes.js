@@ -7,8 +7,8 @@ import {
   uploadImagem,
 } from "../controllers/posts-controller.js";
 
-
-const storage = multer.diskStorage({
+//Para uso no Windows
+/* const storage = multer.diskStorage({
   destination: function (req, file, cd) {
     cd(null, "uploads/");
   },
@@ -16,8 +16,9 @@ const storage = multer.diskStorage({
     cd(null, file.originalname);
   },
 });
+const upload = multer({ dest: "./uploads", storage}); */
 
-const upload = multer({ dest: "./uploads", storage});
+const upload = multer({ dest: "./uploads" });
 
 const routes = (app) => {
   app.use(express.json());
