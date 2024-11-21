@@ -1,7 +1,7 @@
 import express from "express";
 import routes from "./src/routes/posts-routes.js";
 
-const posts = [
+/* const posts = [
   {
     id: 1,
     descricao: "Uma foto teste",
@@ -28,7 +28,7 @@ const posts = [
     descricao: "Um carro esportivo vermelho",
     imagem: "https://source.unsplash.com/random/300x200/?car,red",
   },
-];
+]; */
 
 const app = express();
 routes(app);
