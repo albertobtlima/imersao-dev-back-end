@@ -5,6 +5,7 @@ import {
   listarPosts,
   postarNovoPost,
   uploadImagem,
+  atualizarNovoPost,
 } from "../controllers/posts-controller.js";
 
 //Para uso no Windows
@@ -25,6 +26,7 @@ const routes = (app) => {
   app.get("/posts", listarPosts);
   app.post("/posts", postarNovoPost);
   app.post("/upload", upload.single("imagem"), uploadImagem);
+  app.put("/upload/:id", atualizarNovoPost);
 };
 
 export default routes;
